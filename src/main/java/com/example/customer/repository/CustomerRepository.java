@@ -10,7 +10,7 @@ public interface CustomerRepository
 
     void add(Customer customer);
     Customer getById(int id);
-    List<Customer> get();
+    List<Customer> getAll();
     void update(Customer customer);
     void delete(int id);
 }

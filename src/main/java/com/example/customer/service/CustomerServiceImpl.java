@@ -14,14 +14,10 @@ public class CustomerServiceImpl implements CustomerService{
     @Autowired
     CustomerRepository customerRepository;
 
-
+    @Transactional
     @Override
-    public void add(Customer customer){customerRepository.add(customer);
-    }
-
-    @Override
-    public void add(List<Customer> customers) {
-            for (Customer customer : customers) { customerRepository.add(customer);}
+    public void add(Customer customer){
+        customerRepository.add(customer);
     }
 
 
@@ -31,8 +27,8 @@ public class CustomerServiceImpl implements CustomerService{
     }
 
     @Override
-    public List<Customer> get() {
-        return customerRepository.get();
+    public List<Customer> getAll() {
+        return customerRepository.getAll();
     }
 
     @Transactional

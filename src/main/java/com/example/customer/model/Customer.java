@@ -7,6 +7,12 @@ public class Customer {
     private int phone;
     private String email;
 
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -39,12 +45,7 @@ public class Customer {
     public void setEmail(String email) {
         this.email = email;
     }
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
 
 }

@@ -1,0 +1,30 @@
+
+
+body{
+background-image: url("./companyLogo.png");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+p{
+margin-top: -1px 0;
+}
+h1{
+color:4d82bf;
+}
+a{
+color:blue;
+}
+
+.customers{
+margin: 1vw;
+text-align:center;
+background-color: #A2D9F7;
+opacity:.5;
+flex:0 0 20%;
+}
+
+.box{
+display:flex;
+flex-wrap:wrap;
+}

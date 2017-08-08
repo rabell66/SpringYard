@@ -19,16 +19,16 @@ public class CustomerServiceTest {
     public void testAddGet(){
 
         Customer newCustomer = new Customer();
-        newCustomer.setFirstName("Robert");
-        newCustomer.setLastName("Abell");
-        newCustomer.setEmail("ASDFASDFASD");
+        newCustomer.setFirstName("Shiela");
+        newCustomer.setLastName("Sales");
+        newCustomer.setEmail("ASDFASDFASD.hotmail");
         newCustomer.setPhone(1231234123);
 
         System.out.println("New customer" + newCustomer);
         customerService.add(newCustomer);
         System.out.println(customerService);
 
-        List<Customer> customers = customerService.get();
+        List<Customer> customers = customerService.getAll();
         Customer findNewCustomer = findInList(customers, newCustomer.getFirstName(), newCustomer.getLastName(),
         newCustomer.getPhone(),newCustomer.getEmail());
         Assert.assertNotNull(findNewCustomer);
